@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import Map from "../features/maps/components/Map";
 
 export const HomePage = () => {
   return (
@@ -7,6 +8,10 @@ export const HomePage = () => {
       <p className="text-lg text-gray-600 mb-6">
         A powerful mapping application built with React.
       </p>
+
+      <div className="w-full h-[600px] my-4 mx-auto border">
+        <Map />
+      </div>
 
       <div className="flex justify-center gap-4 mt-8">
         <Link
